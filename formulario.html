@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Meu formulario usando php</h1>
+
+    <form action="dados.php" method="post" name="Form">
+        <fieldset id="User"><legend><h2>Usuario</h2></legend>
+        <fieldset id="Data"><legend>Dados</legend>
+            <label for="cNome">Nome:</label><input type="text" name="cNome" required minlength="5" maxlength="30" placeholder="Seu Nome aqui">
+            <br>
+            <label for="cSenha">Senha:</label><input type="password" name="cSenha" id="Data" required minlength="3" maxlength="8" placeholder="Uma senha de 8 Digitos">
+
+        </fieldset id="Data">
+
+        <fieldset id="Sex"><legend>Sexo</legend>
+            <input type="radio" name="nSexo" id="masc" checked value="Masculino"><label for="masc">Homem</label id="masc">
+                <br>
+            <input type="radio" name="nSexo" id="fem" value="Feminino"><label for="fem" id="fem" >Mulher</label>
+        </fieldset id="Sex">
+
+        <fieldset id="Data_nasc"><legend>Data de Nascimento</legend>
+            <label for="Data_nasc">Data de nascimento: </label><input type="date" name="Data_nasc">
+        </fieldset>
+        <fieldset id="opinion">
+            <label for="men">Deixe sua opinião: </label><textarea name="men" id=""></textarea>
+        </fieldset>
+        <input type="checkbox" name="check" required><label for="check"> Aceita finalizar o Formulário?</label>
+        <br>
+        <input type="submit" value="Enviar">
+        </fieldset id="User">
+        <br>
+    </form>
+</body>
+</html>
